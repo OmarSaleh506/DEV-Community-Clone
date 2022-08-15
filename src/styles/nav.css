@@ -1,0 +1,91 @@
+.header{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid rgb(245, 240, 240);
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    height: 56px;
+    padding: 0px 60px;
+    margin: 0;
+}
+.dev-img{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 40px;
+}
+.input-on-search{
+    flex: 1;
+    border-radius: 5px;
+    border:0.5px solid gray;
+}
+.search-input{
+    display: flex;
+    width: 420px;
+    height: 40px;
+    padding: 0px 8px;
+}
+.search-icon{
+    position: relative;
+    cursor: pointer;
+    top: 8px;
+    right: 40px;
+    height: 24px;
+}
+.Login-create{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    gap: 15px;
+    width: 232px;
+    height: 56px;
+}
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 83px;
+    height: 40px;
+}
+.login-box:hover{
+    background-color: rgba(125, 125, 197, 0.295);
+}
+.create-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#3a48e6;
+    background-color: #ffffff;
+    border: 1px solid #3a48e6;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+}
+.create-account:hover{
+    color: #fff;
+    background-color:rgba(64, 64, 211, 0.918);
+}
+.Login-create a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+
+
+.sign-container{
+    flex: 1;
+    width: 640px;
+    height: auto;
+    background-color: #fff;
+    padding: 0;
+    margin: 20px 25%;
+}
+.welcome-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 5px;
+    padding-bottom: 25px;
+}
+h1{
+    color:#171717;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.apple,.forem,.githup,.twitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 544px;
+    height: 44px;
+}
+.apple{
+    background-color: #000000;
+}
+.forem{
+    background-color:#0a3e4a ;
+}
+.githup{
+    background-color: #24292e;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.apple:hover{
+    background-color: #000000c2;
+}
+.forem:hover{
+    background-color:#0a3e4ad7 ;
+}
+.githup:hover{
+    background-color: #24292ed3;
+}
+.twitter:hover{
+    background-color: #1da0f2c0;
+}
+.apple-icon{
+    margin-right: 8px;
+}
+.forem-icon{
+    margin-right: 8px;
+}
+.githup-icon{
+    margin-right: 8px;
+}
+.twitter-icon{
+    margin-right: 8px;
+}
+.already{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

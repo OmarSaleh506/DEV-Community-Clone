@@ -1,0 +1,85 @@
+interface IComment {
+	id: string;
+	content: string;
+	ownerId: string;
+}
+
+export interface IPost {
+	id: string;
+	description: string;
+	title: string;
+	imageUrl: string;
+	date: Date;
+	likeCount: number;
+	comments: IComment[];
+	username: string;
+	userAvatarUrl: string;
+  tags: string;
+} 
+export const posts: IPost[] = [
+	{
+		id: '1',
+		username: 'omar saleh alwahiby',
+		title: 'Creating a 3D Cylinder shape in CSS',
+		userAvatarUrl: 'https://github.com/github.png?size=460',
+		description: "",
+		imageUrl:
+			'data:image/jpeg;base64,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',
+		date: new Date('2019-01-01'),
+		likeCount: 0,
+		comments: [],
+    tags: '#CSS #SCSS #javascript'
+	},
+	{
+		id: '2',
+		username: 'omar saleh alwahiby',
+		title: 'Creating a 3D Cylinder shape in CSS',
+		userAvatarUrl: 'https://github.com/github.png?size=460',
+		description: "",
+		imageUrl:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGR24tD0CsKC-1qFu88thhzr7mq9QOITSiKg&usqp=CAU',
+		date: new Date('2019-01-01'),
+		likeCount: 0,
+		comments: [],
+    tags: '#CSS #SCSS #javascript'
+	},
+	{
+		id: '3',
+		username: 'omar saleh alwahiby',
+		title: 'Creating a 3D Cylinder shape in CSS',
+		userAvatarUrl: 'https://github.com/github.png?size=460',
+		description: "",
+		imageUrl:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0cn3Oi3LWIPfZZlxzoa95bI-gRgSm8Gbkzg&usqp=CAU',
+		date: new Date('2019-01-01'),
+		likeCount: 0,
+		comments: [],
+    tags: '#CSS #SCSS #javascript'
+	},
+	{
+		id: '4',
+		username: 'omar saleh alwahiby',
+		title: 'Creating a 3D Cylinder shape in CSS',
+		userAvatarUrl: 'https://github.com/github.png?size=460',
+		description: "",
+		imageUrl:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZPLqZPKk2HEf34WckPnhIBagPeISfHBw8Q&usqp=CAU',
+		date: new Date('2019-01-01'),
+		likeCount: 0,
+		comments: [],
+    tags: '#CSS #SCSS #javascript'
+	},
+	{
+		id: '5',
+		username: 'omar saleh alwahiby',
+		title: 'Creating a 3D Cylinder shape in CSS',
+		userAvatarUrl: 'https://github.com/github.png?size=460',
+		description: "",
+		imageUrl:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-4vJkGynUzYGdE1hWBh4X54BjYG-lNrFb7g&usqp=CAU',
+		date: new Date('2019-01-01'),
+		likeCount: 0,
+		comments: [],
+    tags: '#CSS #SCSS #javascript'
+	},
+]
